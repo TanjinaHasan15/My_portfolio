@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Tanjina Hasan</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com" target="_blank" rel="github">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="http://linkedin.com" target="_blank" rel="linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="tanzinahasantanzinahasan@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Tanjina 👋</h2>
+        <p> A passionate and self-motivated learner in web programming and data analysis.
+             I am continuously working on improving my technical skills and problem-solving abilities. Despite starting with minimal coding experience,
+             my dedication and structured learning approach have helped me make significant progress.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+       
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/hero-headshot.jpg" alt="Tanjina Hasan headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        " I am always eager to learn, grow, and explore new opportunities in the tech industry."
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/database.png" alt="database logo">
+          <span>Database</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/python.jpg" alt="python logo">
+          <span>Python</span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <title>My Education Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>My Education Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function showInfo(section) {
+            document.getElementById('info-0-10').classList.add('hidden');
+            document.getElementById('info-11-12').classList.add('hidden');
+            document.getElementById('info-bachelor').classList.add('hidden');
+           
+            
+            document.getElementById('info-' + section).classList.remove('hidden');
+        }
+    </script>
+
+<div class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+    <div class="w-3/4 bg-gray-800 p-6 rounded-lg" >
+        <h2 class="text-green-400 text-sm uppercase">Education</h2>
+        <h1 class="text-2xl font-bold mb-4">My Education Life</h1>
+        
+        <div class="flex">
+            <!-- Sidebar -->
+            <div class="flex flex-col space-y-2 mr-6">
+                <button onclick="showInfo('0-10')" class="bg-green-500 text-black px-4 py-2 rounded-lg">SSC</button>
+                <button onclick="showInfo('11-12')" class="bg-green-500 text-black px-4 py-2 rounded-lg">HSC</button>
+                <button onclick="showInfo('bachelor')" class="bg-green-500 text-black px-4 py-2 rounded-lg">Bachelor</button>
+               
+            </div>
+            
+            <!-- Content -->
+            <div class="bg-gray-700 p-6 rounded-lg flex-1">
+                <div id="info-0-10">
+                    <h2 class="text-xl font-bold">NIPGHS</h2>
+                    <p class="text-green-400">Bangladesh,Brahmanbaria,Nabinagar</p>
+                    <p class="mt-2 font-semibold">Subject: <span class="font-normal">Science</span></p>
+                    
+                </div>
+                <div id="info-11-12" class="hidden">
+                    <h2 class="text-xl font-bold">Nabinagar Government Collage</h2>
+                    <p class="text-green-400">Bangladesh,Brahmanbaria,Nabinagar</p>
+                    <p class="mt-2 font-semibold">Subject: <span class="font-normal">Science</span></p>
+                   
+                </div>
+                <div id="info-bachelor" class="hidden">
+                    <h2 class="text-xl font-bold">Green University of Bangladesh </h2>
+                    <p class="text-green-400">Bangladesh</p>
+                    <p class="mt-2 font-semibold">Subject: <span class="font-normal">Computer Science</span></p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+   
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+            I am available for freelance and contract-based work in web programming and data analysis.
+             Open to collaboration and opportunities.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
